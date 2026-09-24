@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "process_name": "Blue Clip Sequence Validation",
+  "cycle_mode": "manual",
+  "simulation": true,
+  "camera": {"source": 0, "width": 1280, "height": 720, "fps": 30},
+  "timing": {"simultaneous_window_ms": 300},
+  "alignment": {"mode": "none", "marker_ids": []},
+  "logging": {"save_pass_image": true, "save_ng_image": true},
+  "ui": {"beep": false},
+  "reference_image": null,
+  "rois": [
+    {"id":"A","name":"A","display_name":"Blue Clip A","shape":"rectangle","points":[],"roi_type":"Clip","detector":"hsv","sequence_enabled":true,"sequence_position":1,"required":true,"enabled":true,"allow_removal":false,"occupancy_threshold":0.08,"presence_ms":300,"absence_ms":700,"hsv":{"h_min":90,"h_max":135,"s_min":100,"s_max":255,"v_min":60,"v_max":255,"erode":0,"dilate":0,"open_kernel":3,"close_kernel":5}},
+    {"id":"B","name":"B","display_name":"Blue Clip B","shape":"rectangle","points":[],"roi_type":"Clip","detector":"hsv","sequence_enabled":true,"sequence_position":2,"required":true,"enabled":true,"allow_removal":false,"occupancy_threshold":0.08,"presence_ms":300,"absence_ms":700,"hsv":{"h_min":90,"h_max":135,"s_min":100,"s_max":255,"v_min":60,"v_max":255,"erode":0,"dilate":0,"open_kernel":3,"close_kernel":5}},
+    {"id":"C","name":"C","display_name":"Blue Clip C","shape":"rectangle","points":[],"roi_type":"Clip","detector":"hsv","sequence_enabled":true,"sequence_position":3,"required":true,"enabled":true,"allow_removal":false,"occupancy_threshold":0.08,"presence_ms":300,"absence_ms":700,"hsv":{"h_min":90,"h_max":135,"s_min":100,"s_max":255,"v_min":60,"v_max":255,"erode":0,"dilate":0,"open_kernel":3,"close_kernel":5}}
+  ]
+}

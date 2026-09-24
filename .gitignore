@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.station_state.json
+inspection_data/*.sqlite3
+inspection_data/PASS/*.jpg
+inspection_data/NG/*.jpg
+logs/*.log
+profiles/*_reference.jpg
