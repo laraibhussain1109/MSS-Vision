@@ -1,0 +1,218 @@
+[
+ {
+  "id": "contract_basics", "category": "Contracts", "title": "What makes a contract valid",
+  "keywords": ["contract", "agreement", "valid contract", "enforceable", "binding", "offer and acceptance", "consideration", "verbal agreement", "oral contract", "legally binding"],
+  "questions": ["Is my contract legally binding?", "Is a verbal agreement enforceable?", "What makes a contract valid?"],
+  "answer": "In most legal systems a contract is enforceable when there is an offer, an acceptance, something of value exchanged (consideration), a shared intention to be legally bound, parties with legal capacity, and a lawful purpose. Many oral agreements are binding, but they are hard to prove, and some contracts (for example land sales or guarantees) must be in writing to be enforceable.",
+  "steps": ["Put the agreement in writing and have every party sign and date it.", "Spell out the parties, what each side must do, the price, deadlines and how either side can end the deal.", "Add clauses covering dispute resolution and governing law.", "Keep signed copies and related emails.", "Have a lawyer review any high-value or long-term contract before you sign."],
+  "related": ["breach_of_contract", "nda", "statute_of_limitations"]
+ },
+ {
+  "id": "breach_of_contract", "category": "Contracts", "title": "Breach of contract",
+  "keywords": ["breach", "breach of contract", "broke the contract", "violated agreement", "failed to deliver", "didn't perform", "damages", "specific performance", "remedy", "other party backed out"],
+  "questions": ["The other party did not follow the contract, what can I do?", "What are my remedies for breach of contract?"],
+  "answer": "A breach happens when a party fails to perform a contractual obligation without a lawful excuse. Typical remedies are compensatory damages, specific performance (a court order to perform), cancellation of the contract with restitution, or an injunction. The injured party generally has a duty to take reasonable steps to limit its losses.",
+  "steps": ["Re-read the contract for notice, cure-period and termination clauses.", "Collect evidence: the contract, messages, invoices and delivery records.", "Send a written notice describing the breach and what you want done.", "Consider negotiation or mediation before litigation.", "Check the limitation period so you do not lose the right to sue."],
+  "related": ["contract_basics", "small_claims", "statute_of_limitations"]
+ },
+ {
+  "id": "wrongful_termination", "category": "Employment", "title": "Wrongful termination and dismissal",
+  "keywords": ["fired", "terminated", "dismissed", "laid off", "wrongful termination", "unfair dismissal", "lost my job", "severance", "notice period", "redundancy", "let go", "sacked"],
+  "questions": ["Can my employer fire me without notice?", "I was fired, is it legal?", "Was I wrongfully terminated?"],
+  "answer": "Whether a dismissal is unlawful depends on your country or state, your contract and your length of service. Many places require notice, severance or a fair reason, while 'at-will' systems still prohibit firing for discrimination, retaliation, whistleblowing or exercising protected rights such as medical or family leave. A dismissal that breaches your contract can also give rise to a claim.",
+  "steps": ["Ask for the reason and the termination decision in writing.", "Request a copy of your contract, handbook and personnel file.", "Save emails, reviews and messages that show how you were treated.", "Do not sign a settlement or severance agreement until you understand it.", "Act quickly: claims to labour agencies or tribunals often have short deadlines.", "Consider speaking to an employment lawyer or your labour authority."],
+  "related": ["unpaid_wages", "workplace_harassment", "statute_of_limitations"]
+ },
+ {
+  "id": "unpaid_wages", "category": "Employment", "title": "Unpaid wages and overtime",
+  "keywords": ["unpaid wages", "not paid", "hasn't paid", "salary", "overtime", "owed money", "final paycheck", "withheld pay", "wage theft", "late salary", "employer owes me"],
+  "questions": ["My employer has not paid my salary, what can I do?", "How do I claim unpaid overtime?"],
+  "answer": "Employers are legally required to pay wages, overtime and agreed benefits on time, and to settle final pay when employment ends. If you are underpaid you can usually claim the shortfall, and some jurisdictions add penalties or interest.",
+  "steps": ["Calculate what you are owed using your contract, payslips, timesheets and bank statements.", "Send a polite written request to your employer or HR with a payment deadline.", "If that fails, file a complaint with the labour department or equivalent agency.", "Consider small claims or an employment tribunal for the unpaid amount.", "Keep copies of everything and note the date of each request."],
+  "related": ["wrongful_termination", "small_claims", "statute_of_limitations"]
+ },
+ {
+  "id": "workplace_harassment", "category": "Employment", "title": "Workplace harassment and discrimination",
+  "keywords": ["harassment", "discrimination", "hostile work environment", "bullying", "sexual harassment", "boss", "manager", "coworker", "retaliation", "discriminated", "harassed at work"],
+  "questions": ["My boss is harassing me, what are my rights?", "I am being discriminated against at work."],
+  "answer": "Most legal systems prohibit harassment and discrimination based on protected characteristics such as sex, race, religion, disability, age or pregnancy. Employers usually must offer a complaint process and must not retaliate against someone who reports a problem. Claims normally need evidence of unwelcome conduct, its effect on your work, and how the employer responded.",
+  "steps": ["Write down each incident with dates, places and witnesses.", "Save emails, messages and screenshots.", "Report it in writing following the company's policy.", "If the employer does not act, contact the labour or equal-opportunity agency.", "Be aware of filing deadlines, which can be short.", "Seek advice from an employment lawyer or a union representative."],
+  "related": ["wrongful_termination", "unpaid_wages", "finding_lawyer"]
+ },
+ {
+  "id": "eviction", "category": "Housing", "title": "Eviction and tenant rights",
+  "keywords": ["evicted", "eviction", "eviction notice", "kicked out", "landlord", "tenant", "vacate", "notice to quit", "lease termination", "evict", "rent arrears", "asked to leave"],
+  "questions": ["My landlord wants me out, is that legal?", "I received an eviction notice, what should I do?"],
+  "answer": "In most places a landlord must follow a legal process to evict: a written notice with a valid reason, then a court order if you do not leave. Changing locks, removing belongings or cutting off utilities without a court order is often illegal ('self-help' eviction). Notice periods and permitted grounds, such as unpaid rent or lease violations, vary by location.",
+  "steps": ["Read the notice carefully and note the dates and the stated reason.", "Never ignore court papers. Respond before the deadline.", "If the issue is unpaid rent, ask about a payment plan and keep proof of payments.", "Contact a tenant union, legal aid clinic or housing lawyer.", "Keep your lease, rent receipts and all communication with the landlord."],
+  "related": ["security_deposit", "landlord_repairs", "finding_lawyer"]
+ },
+ {
+  "id": "security_deposit", "category": "Housing", "title": "Security deposit disputes",
+  "keywords": ["security deposit", "deposit", "landlord kept my deposit", "refund deposit", "damage deposit", "move out", "wear and tear", "deposit back"],
+  "questions": ["My landlord will not return my deposit.", "Can a landlord keep my security deposit?"],
+  "answer": "A landlord can usually keep part of a deposit only for unpaid rent or damage beyond normal wear and tear. Many jurisdictions require the deposit to be returned within a fixed period with an itemised list of deductions, and some require deposits to be held in a protected account.",
+  "steps": ["Photograph or film the property's condition at move-in and move-out.", "Give your forwarding address in writing.", "Request the deposit back in writing and ask for itemised deductions.", "Dispute unfair deductions with receipts and photos.", "If unresolved, use a deposit-protection dispute service or small claims court."],
+  "related": ["eviction", "landlord_repairs", "small_claims"]
+ },
+ {
+  "id": "landlord_repairs", "category": "Housing", "title": "Landlord repairs and habitable housing",
+  "keywords": ["repairs", "mold", "mould", "leak", "heating not working", "habitability", "landlord won't fix", "maintenance", "uninhabitable", "pests", "broken heater", "no hot water"],
+  "questions": ["My landlord refuses to fix problems in my flat.", "Can I withhold rent until repairs are done?"],
+  "answer": "Landlords generally must keep rental homes safe and habitable: working plumbing, heating, structural safety and basic sanitation. Remedies for ignored repairs can include official inspections, rent reductions or repair-and-deduct, but these are tightly regulated, and withholding rent without following the rules can put you at risk of eviction.",
+  "steps": ["Report the problem in writing and keep a copy.", "Allow reasonable time and access for repairs.", "Photograph the problem and keep dated records.", "Contact the local housing or health inspector if it is not fixed.", "Check local law before withholding rent or paying for repairs yourself."],
+  "related": ["eviction", "security_deposit", "small_claims"]
+ },
+ {
+  "id": "divorce", "category": "Family", "title": "Divorce and separation",
+  "keywords": ["divorce", "separation", "separate", "spouse", "husband", "wife", "marriage", "alimony", "spousal support", "property division", "split assets", "divorced"],
+  "questions": ["How does divorce work?", "I want a divorce, where do I start?", "How is property divided in a divorce?"],
+  "answer": "A divorce ends a marriage and usually deals with four things: the divorce itself, division of property and debts, spousal support, and arrangements for children. Many places allow 'no-fault' divorce, while others require grounds or a separation period. Residency and filing rules differ by location, and agreeing terms through negotiation or mediation is usually faster and cheaper than a contested trial.",
+  "steps": ["Confirm residency and separation requirements where you live.", "Gather financial documents: income, assets, debts, tax returns and property records.", "List your priorities for children, housing and finances.", "Consider mediation or a collaborative process.", "Speak with a family lawyer before filing or signing any agreement.", "Avoid moving money or hiding assets."],
+  "related": ["child_custody", "wills", "finding_lawyer"]
+ },
+ {
+  "id": "child_custody", "category": "Family", "title": "Child custody and support",
+  "keywords": ["custody", "child custody", "child support", "visitation", "parenting plan", "kids", "my children", "access to child", "co-parenting", "my son", "my daughter"],
+  "questions": ["Who gets custody of the children?", "How is child support decided?"],
+  "answer": "Courts decide custody based on the best interests of the child. Decisions often separate legal custody (who makes major decisions) from physical custody (where the child lives) and may be shared or sole. Child support is typically based on the parents' incomes and the time each spends with the child. Orders can be modified if circumstances change significantly.",
+  "steps": ["Draft a proposed parenting plan covering schedule, holidays, schooling and medical decisions.", "Keep a record of caregiving, expenses and communication.", "Keep communication respectful and child-focused.", "Follow any existing court order exactly until a court changes it.", "Talk to a family lawyer or mediator, particularly where safety is a concern."],
+  "related": ["divorce", "finding_lawyer", "statute_of_limitations"]
+ },
+ {
+  "id": "wills", "category": "Estate", "title": "Wills and estate planning",
+  "keywords": ["will", "make a will", "write a will", "testament", "estate planning", "executor", "beneficiary", "last will", "bequeath", "leave my property"],
+  "questions": ["How do I write a will?", "Do I need a lawyer to make a will?"],
+  "answer": "A will sets out who receives your property and who will manage your estate (the executor). Validity rules vary, but usually the will must be in writing, signed by you and witnessed, and you must have mental capacity. Review it after major life events such as marriage, divorce, children or buying property, and consider naming a guardian for minor children.",
+  "steps": ["List your assets, debts and the people you want to benefit.", "Choose an executor, a backup, and guardians for any minor children.", "Sign and witness the will according to local formalities.", "Store the original safely and tell the executor where it is.", "Review it every few years; use a lawyer for complex estates."],
+  "related": ["probate", "power_of_attorney", "finding_lawyer"]
+ },
+ {
+  "id": "probate", "category": "Estate", "title": "Probate and inheriting without a will",
+  "keywords": ["probate", "died", "passed away", "death", "inherit", "inheritance", "intestate", "no will", "estate administration", "deceased", "heir", "relative died"],
+  "questions": ["What happens if someone dies without a will?", "How does probate work?"],
+  "answer": "When someone dies, their estate is usually administered through probate or a similar process. If there is a will, the executor applies for authority to act. If there is no will (intestacy), statutory rules decide who inherits, usually the spouse and children first. The administrator gathers assets, pays debts and taxes, and then distributes what remains.",
+  "steps": ["Locate the will and obtain the death certificate.", "Identify the executor, or apply to be administrator if there is no will.", "Make an inventory of assets and debts.", "Notify banks, creditors and relevant agencies.", "Do not distribute assets before debts and taxes are settled.", "Consider a lawyer for disputes or complex estates."],
+  "related": ["wills", "power_of_attorney", "finding_lawyer"]
+ },
+ {
+  "id": "business_structure", "category": "Business", "title": "Choosing a business structure",
+  "keywords": ["start a business", "startup", "llc", "company registration", "sole proprietorship", "partnership", "incorporate", "corporation", "register company", "business structure", "limited company", "register a business"],
+  "questions": ["Should I form an LLC or a sole proprietorship?", "How do I register my company?"],
+  "answer": "Common structures are sole proprietorship, partnership, limited liability company (LLC) or limited company, and corporation. The main differences are personal liability, taxation, setup cost and administrative burden. Sole proprietors and general partners are typically personally liable for business debts, while limited-liability entities generally separate personal and business assets.",
+  "steps": ["Decide how much liability protection you need and how many owners there will be.", "Compare tax treatment with an accountant.", "Register the business name and entity with the relevant authority.", "Obtain required licences and tax registrations.", "Put any partnership or shareholder agreement in writing.", "Open a separate business bank account."],
+  "related": ["intellectual_property", "contract_basics", "nda"]
+ },
+ {
+  "id": "intellectual_property", "category": "Business", "title": "Intellectual property: copyright, trademarks and patents",
+  "keywords": ["copyright", "trademark", "patent", "intellectual property", "logo", "brand name", "plagiarism", "infringement", "trade secret", "invention", "royalty", "ip rights"],
+  "questions": ["How do I protect my brand name?", "How do I register a trademark?", "Is my work protected by copyright?"],
+  "answer": "Copyright protects original creative works such as writing, software, music and images, usually from the moment of creation. Trademarks protect brand names and logos used in trade. Patents protect new, inventive and useful inventions and require an application. Trade secrets are protected as long as they are kept confidential. Rules and registration systems vary by country.",
+  "steps": ["Keep dated drafts and files as proof of creation.", "Search existing trademarks before adopting a name or logo.", "Register trademarks or file patents where valuable. In many countries patents must be filed before public disclosure.", "Use written assignment or licence agreements with contractors and employees.", "Use NDAs when sharing confidential ideas."],
+  "related": ["nda", "business_structure", "contract_basics"]
+ },
+ {
+  "id": "nda", "category": "Contracts", "title": "Non-disclosure agreements (NDAs)",
+  "keywords": ["nda", "non-disclosure", "non disclosure agreement", "confidentiality agreement", "confidential information", "confidentiality", "keep secret"],
+  "questions": ["What should an NDA include?", "Is my NDA enforceable?"],
+  "answer": "An NDA is a contract that protects confidential information shared between parties. A good NDA defines what counts as confidential, who may access it, how long the duty lasts and what is excluded (for example information that is already public). NDAs can be one-way or mutual, and courts may refuse to enforce terms that are overly broad or that block reporting unlawful conduct.",
+  "steps": ["Decide whether the NDA should be one-way or mutual.", "Define confidential information precisely.", "Set a reasonable duration and permitted purposes.", "Include return or destruction of materials and remedies for breach.", "Have a lawyer review it if the information is valuable."],
+  "related": ["contract_basics", "intellectual_property", "breach_of_contract"]
+ },
+ {
+  "id": "personal_injury", "category": "Injury", "title": "Personal injury claims",
+  "keywords": ["accident", "injury", "injured", "car accident", "slip and fall", "compensation", "negligence", "medical malpractice", "hurt", "insurance claim", "personal injury", "crash"],
+  "questions": ["I was injured in an accident, can I claim compensation?", "How do personal injury claims work?"],
+  "answer": "A personal injury claim usually requires showing that someone owed you a duty of care, breached it, and caused your injury and losses. Compensation can cover medical costs, lost income, pain and suffering and future care. Time limits are often short, and your own conduct can reduce compensation in many places.",
+  "steps": ["Get medical attention and follow treatment advice.", "Report the incident and keep reference numbers.", "Photograph the scene and injuries and collect witness contacts.", "Keep medical bills and records of lost income.", "Be cautious with insurer statements and quick settlement offers.", "Consult a personal injury lawyer. Many offer a free first meeting or work on contingency."],
+  "related": ["statute_of_limitations", "finding_lawyer", "small_claims"]
+ },
+ {
+  "id": "consumer_rights", "category": "Consumer", "title": "Consumer rights and refunds",
+  "keywords": ["refund", "faulty product", "defective", "warranty", "scam", "consumer", "return policy", "online purchase", "chargeback", "guarantee", "bought", "seller", "won't refund"],
+  "questions": ["The seller will not refund my defective product.", "What are my rights as a consumer?"],
+  "answer": "Goods and services must generally be of satisfactory quality, fit for purpose and as described. If they are faulty or misdescribed you can usually seek a repair, replacement or refund, even if the seller's own policy says otherwise. Online purchases often carry a cooling-off period, and card or bank chargebacks can be an option.",
+  "steps": ["Gather the receipt, order confirmation, advertisement and photos of the defect.", "Contact the seller in writing and state the remedy you want.", "Allow a reasonable response time.", "Use a card chargeback or payment-provider dispute where available.", "Escalate to a consumer protection agency or small claims court."],
+  "related": ["small_claims", "contract_basics", "data_privacy"]
+ },
+ {
+  "id": "debt_collection", "category": "Finance", "title": "Debt collection and unpaid debts",
+  "keywords": ["debt", "collector", "collections", "owe money", "creditor", "loan default", "harassing calls", "bankruptcy", "credit card debt", "unpaid bill", "debt collector", "i owe"],
+  "questions": ["A debt collector keeps calling me.", "What are my rights if I owe money?"],
+  "answer": "Debt collectors must follow rules: in many places they cannot harass you, lie about the amount owed or contact you at unreasonable hours. You can usually ask for written verification of the debt. Old debts may be time-barred, but acknowledging or paying a small amount can restart the clock in some jurisdictions, so check before responding. Never ignore a court claim.",
+  "steps": ["Ask for written validation including the amount, creditor and dates.", "Check whether the debt is within the limitation period.", "Respond in writing and keep copies.", "Negotiate a realistic payment plan or settlement in writing.", "Seek free debt advice or legal aid.", "Respond to any court papers by the deadline."],
+  "related": ["statute_of_limitations", "small_claims", "finding_lawyer"]
+ },
+ {
+  "id": "arrest_rights", "category": "Criminal", "title": "Your rights if arrested or questioned by police",
+  "keywords": ["arrested", "arrest", "police", "detained", "charged", "criminal charge", "interrogation", "right to remain silent", "bail", "search warrant", "questioned by police", "jail", "crime"],
+  "questions": ["What are my rights if I am arrested?", "Police want to question me, what should I do?"],
+  "answer": "In most legal systems you have the right to remain silent, the right to a lawyer, and the right to be told why you are being detained. Stay calm, do not resist or obstruct, and ask clearly for a lawyer before answering substantive questions. You can generally decline consent to a search where police have no warrant, but do not physically interfere.",
+  "steps": ["State clearly that you wish to remain silent and want a lawyer.", "Ask whether you are free to leave.", "Do not lie or provide false documents.", "Contact a criminal defence lawyer or public defender immediately.", "Write down what happened as soon as possible.", "Do not discuss the case by phone or on social media."],
+  "related": ["finding_lawyer", "statute_of_limitations", "debt_collection"]
+ },
+ {
+  "id": "small_claims", "category": "Disputes", "title": "Small claims court",
+  "keywords": ["small claims", "sue", "lawsuit", "file a claim", "court", "magistrate", "sue someone", "claim money back", "civil claim", "take to court"],
+  "questions": ["How do I sue someone for money?", "How does small claims court work?"],
+  "answer": "Small claims courts handle lower-value disputes through simplified, cheaper procedures, and you usually do not need a lawyer. Each jurisdiction sets its own claim limit. They are often used for unpaid invoices, deposits, minor property damage and faulty goods.",
+  "steps": ["Check the monetary limit and which court has jurisdiction.", "Send a final written demand first.", "Organise your evidence by date.", "Complete the claim form and pay the filing fee.", "Serve the defendant as required and attend the hearing with originals.", "Learn how judgments are enforced if the other side does not pay."],
+  "related": ["breach_of_contract", "security_deposit", "statute_of_limitations"]
+ },
+ {
+  "id": "power_of_attorney", "category": "Estate", "title": "Power of attorney",
+  "keywords": ["power of attorney", "poa", "attorney in fact", "lasting power", "authorise someone", "act on my behalf", "elderly parent", "capacity", "manage my affairs"],
+  "questions": ["How do I give someone power of attorney?", "Can I manage my parent's finances?"],
+  "answer": "A power of attorney (POA) lets you authorise a trusted person, the agent, to act for you on financial, legal or healthcare matters. It can be general, limited to specific tasks, or 'durable' or 'enduring' so that it continues if you lose capacity. You must have capacity to grant one, and you can usually revoke it at any time while you have capacity.",
+  "steps": ["Choose a trustworthy agent and a backup.", "Decide the scope and when it takes effect.", "Follow the signing and witnessing rules where you live.", "Give copies to the agent, bank and doctor as needed.", "Revoke in writing and notify institutions if circumstances change."],
+  "related": ["wills", "probate", "finding_lawyer"]
+ },
+ {
+  "id": "statute_of_limitations", "category": "General", "title": "Time limits for legal claims",
+  "keywords": ["statute of limitations", "time limit", "deadline", "how long do i have", "too late to sue", "limitation period", "expire", "how long can i sue", "time bar"],
+  "questions": ["How long do I have to file a lawsuit?", "Is it too late to bring a claim?"],
+  "answer": "A statute of limitations (limitation period) is the deadline for starting a legal action. Its length depends on the type of claim and the jurisdiction. Contract, injury, property and employment claims often have different periods, from a few months to several years. Missing the deadline can bar your claim entirely, though some situations pause or extend the clock.",
+  "steps": ["Identify the date the problem occurred or when you discovered it.", "Look up the limitation period for your type of claim in your jurisdiction.", "Note shorter deadlines for government bodies, employment tribunals and insurance claims.", "Seek legal advice early.", "Do not assume negotiations stop the clock unless an extension is agreed in writing."],
+  "related": ["small_claims", "personal_injury", "finding_lawyer"]
+ },
+ {
+  "id": "data_privacy", "category": "Technology", "title": "Data privacy and online rights",
+  "keywords": ["privacy", "personal data", "gdpr", "data breach", "data protection", "delete my data", "cookies", "hacked", "identity theft", "surveillance", "my data"],
+  "questions": ["Can I ask a company to delete my data?", "My personal data was leaked, what now?"],
+  "answer": "Many countries give individuals rights over personal data, such as the right to know what is collected, correct it and request deletion. Organisations must usually protect it and report serious breaches. Businesses that handle personal data generally need a privacy policy, a lawful basis for collecting it and security safeguards.",
+  "steps": ["Review the organisation's privacy policy and request access to your data in writing.", "Ask for correction or deletion where appropriate.", "Complain to the data protection authority if you are ignored.", "After a breach, change passwords, monitor accounts and keep any notices you receive.", "If you run a business, map the data you hold, minimise collection and appoint someone responsible."],
+  "related": ["consumer_rights", "defamation", "business_structure"]
+ },
+ {
+  "id": "defamation", "category": "Disputes", "title": "Defamation, libel and slander",
+  "keywords": ["defamation", "libel", "slander", "false statements", "ruined my reputation", "fake review", "online defamation", "smear", "lies about me"],
+  "questions": ["Someone is spreading lies about me, can I sue?", "Is a fake review defamation?"],
+  "answer": "Defamation is a false statement of fact, published to others, that harms someone's reputation. Written statements are libel and spoken ones slander. Truth, honest opinion and certain privileged statements are common defences. Courts often look at whether the statement caused serious harm, and time limits for claims are usually short.",
+  "steps": ["Preserve evidence: screenshots showing dates and URLs.", "Do not respond with retaliatory statements.", "Ask the platform to remove the content under its policies.", "Consider a cease-and-desist letter.", "Get legal advice quickly, because deadlines are short and cases can be costly."],
+  "related": ["data_privacy", "statute_of_limitations", "finding_lawyer"]
+ },
+ {
+  "id": "property_purchase", "category": "Property", "title": "Buying property",
+  "keywords": ["buy a house", "buy property", "real estate", "conveyancing", "title deed", "mortgage", "closing", "land", "purchase agreement", "buy land", "home buying", "buying a home"],
+  "questions": ["What legal checks should I do before buying a house?", "Do I need a lawyer to buy property?"],
+  "answer": "Buying property involves due diligence before you commit: checking ownership (title), encumbrances such as mortgages or easements, planning and zoning rules, survey and inspection results, and the terms of the purchase contract. A lawyer or licensed conveyancer typically handles title checks, contract review and the transfer. Budget for taxes, registration fees and legal costs on top of the price.",
+  "steps": ["Arrange financing and budget for closing costs.", "Commission a survey and inspection.", "Have a lawyer or conveyancer run title searches and review the contract.", "Check for liens, disputes, unpaid taxes and planning restrictions.", "Pay large sums only through secure, documented channels."],
+  "related": ["contract_basics", "finding_lawyer", "landlord_repairs"]
+ },
+ {
+  "id": "finding_lawyer", "category": "General", "title": "Finding and paying for a lawyer",
+  "keywords": ["lawyer", "attorney", "solicitor", "legal fees", "legal aid", "find a lawyer", "how much does a lawyer cost", "hire", "retainer", "pro bono", "advocate", "consultation fee"],
+  "questions": ["How do I find a good lawyer?", "How much does a lawyer cost?", "Can I get free legal help?"],
+  "answer": "Choose a lawyer licensed in the right jurisdiction who practises in the relevant area. Common fee structures are hourly rates, fixed fees, retainers and contingency fees (a percentage if you win, common in injury cases). Many lawyers offer a short initial consultation, and legal aid, law school clinics and bar association referral services can help if cost is a concern.",
+  "steps": ["Write a one-page summary of the facts and timeline.", "Collect the key documents.", "Ask about experience, fees, expected total costs and how they communicate.", "Get the fee agreement in writing.", "Check the lawyer's licence and disciplinary record with the bar association.", "Look into legal aid or pro bono services if you cannot afford a lawyer."],
+  "related": ["statute_of_limitations", "small_claims", "contract_basics"]
+ },
+ {
+  "id": "immigration", "category": "General", "title": "Immigration and visa matters",
+  "keywords": ["visa", "immigration", "residency", "citizenship", "green card", "work permit", "deportation", "asylum", "passport", "overstay", "immigrate", "migrate"],
+  "questions": ["How do I apply for a visa?", "What happens if I overstay my visa?"],
+  "answer": "Immigration rules differ widely by country and change frequently. Applications usually depend on the category (work, study, family, asylum), strict evidence requirements and firm deadlines. Providing false information can lead to refusal, bans or criminal penalties. Use only licensed or accredited representatives, as immigration scams are common.",
+  "steps": ["Identify your visa category and check the official government website.", "Gather the required documents with certified translations.", "Track expiry dates and filing deadlines.", "Respond to requests for evidence on time.", "Use an accredited immigration lawyer or adviser, and never pay anyone who guarantees approval."],
+  "related": ["finding_lawyer", "statute_of_limitations", "arrest_rights"]
+ }
+]
