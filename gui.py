@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import html
 import re
+import sys
 from datetime import datetime
 
 from PyQt6.QtCore import Qt, QTimer
@@ -281,3 +282,17 @@ class ChatWindow(QMainWindow):
             "built with Python and PyQt6.<br><br>It provides general legal information "
             "only. It is not a substitute for advice from a licensed lawyer.",
         )
+
+
+def main() -> int:
+    """Start the desktop application."""
+    from PyQt6.QtWidgets import QApplication
+
+    app = QApplication(sys.argv)
+    window = ChatWindow()
+    window.show()
+    return app.exec()
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

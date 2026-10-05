@@ -16,6 +16,7 @@ from __future__ import annotations
 
 import json
 import math
+import os
 import re
 import sys
 from collections import Counter
@@ -170,9 +171,12 @@ FOLLOWUP_CUE_RE = re.compile(r"\b(it|that|this|they|them|those|also|what about|a
 
 INTAKE_STEPS = [
     ("name", "Let's set up a consultation request. What is your full name?"),
+    ("jurisdiction", "Where is the matter taking place? Please enter the country and state, province, or territory."),
     ("area", "Which area does your matter fall under? (for example employment, housing, family, contracts)"),
     ("summary", "Please describe your situation in a few sentences. Avoid sharing passwords or ID numbers."),
     ("contact", "Finally, how can we reach you? (email address or phone number)"),
+    ("consent", "Your answers will be saved as a local JSON file on this computer. "
+                "Type **I consent** to save the request, or **cancel** to discard it."),
 ]
 EMAIL_RE = re.compile(r"^[^@\s]+@[^@\s]+\.[^@\s]+$")
 
@@ -273,6 +277,8 @@ class LegalBot:
     def _answer_entry(self, entry: dict, notice: str = "") -> Reply:
         self.last_entry = entry
         text = (f"**{entry['title']}**\n\n{entry['answer']}\n\n"
+                "Because the applicable rules depend on your location and facts, check current "
+                "official guidance for your jurisdiction.\n\n"
                 f"Type **next steps** for practical steps.\n{DISCLAIMER_FOOTER}")
         related = [self.by_id[r]["title"] for r in entry.get("related", [])[:2]]
         return Reply(text, suggestions=["Next steps", *related, "Request a consultation"],
@@ -318,8 +324,18 @@ class LegalBot:
             return Reply("No problem, I've cancelled the consultation request. "
                          "You can restart any time with **/intake**.")
         key = INTAKE_STEPS[self.intake["step"]][0]
+        if len(text) > 2_000:
+            return Reply("Please shorten that answer to 2,000 characters or fewer.")
+        if key == "consent":
+            if text.casefold() not in {"i consent", "consent", "yes, i consent"}:
+                return Reply("I have not saved anything. Type **I consent** to save this local "
+                             "request, or **cancel** to discard it.")
+            return self._finish_intake()
         if key == "name" and len(text) < 2:
             return Reply("Please enter your full name.")
+        if key == "jurisdiction" and len(text) < 2:
+            return Reply("Please enter the country and state, province, or territory where "
+                         "the matter occurred.")
         if key == "contact" and not _valid_contact(text):
             return Reply("That doesn't look like a valid email or phone number. Please try again, "
                          "or type **cancel** to stop.")
@@ -329,24 +345,27 @@ class LegalBot:
             nxt = INTAKE_STEPS[self.intake["step"]]
             chips = ["Employment", "Housing", "Family", "Contracts"] if nxt[0] == "area" else []
             return Reply(nxt[1], suggestions=chips)
-        return self._finish_intake()
+        raise RuntimeError("consultation intake advanced past its final step")
 
     def _finish_intake(self) -> Reply:
         data = self.intake["data"]
         now = datetime.now()
-        ref = now.strftime("LC-%Y%m%d-%H%M%S")
+        ref = now.strftime("LC-%Y%m%d-%H%M%S-%f")
         record = {"reference": ref, "created": now.isoformat(timespec="seconds"), **data}
         self.intake = None
         try:
             self.intake_dir.mkdir(parents=True, exist_ok=True)
-            with open(self.intake_dir / f"{ref}.json", "w", encoding="utf-8") as fh:
+            path = self.intake_dir / f"{ref}.json"
+            descriptor = os.open(path, os.O_WRONLY | os.O_CREAT | os.O_EXCL, 0o600)
+            with os.fdopen(descriptor, "w", encoding="utf-8") as fh:
                 json.dump(record, fh, indent=2, ensure_ascii=False)
         except OSError as exc:
             return Reply(f"I couldn't save your request ({exc}). Please copy your details and "
                          "contact the office directly.")
         return Reply(
             f"**Consultation request saved.** Reference: **{ref}**\n\n"
-            f"Name: {data['name']}\nArea: {data['area']}\nContact: {data['contact']}\n\n"
+            f"Name: {data['name']}\nJurisdiction: {data['jurisdiction']}\n"
+            f"Area: {data['area']}\nContact: {data['contact']}\n\n"
             "A member of the team can use this summary to follow up with you. Submitting this "
             "request does not create a lawyer-client relationship.",
             suggestions=["Browse topics"],
