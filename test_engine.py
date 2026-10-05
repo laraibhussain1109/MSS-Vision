@@ -1,5 +1,6 @@
 """Unit tests for the chatbot engine. Run with:  python -m unittest -v"""
 import json
+import os
 import tempfile
 import unittest
 from pathlib import Path
@@ -79,15 +80,32 @@ class EngineTests(unittest.TestCase):
     def test_intake_flow_saves_file(self):
         self.bot.respond("/intake")
         self.bot.respond("Jane Doe")
+        self.bot.respond("England and Wales")
         self.bot.respond("housing")
         self.bot.respond("My landlord changed the locks.")
         bad = self.bot.respond("not-a-contact")
         self.assertIn("valid", bad.text)
-        done = self.bot.respond("jane@example.com")
+        consent_prompt = self.bot.respond("jane@example.com")
+        self.assertIn("I consent", consent_prompt.text)
+        self.assertEqual(list(Path(self.tmp.name).glob("*.json")), [])
+        done = self.bot.respond("I consent")
         self.assertIn("saved", done.text)
         files = list(Path(self.tmp.name).glob("*.json"))
         self.assertEqual(len(files), 1)
-        self.assertEqual(json.loads(files[0].read_text())["name"], "Jane Doe")
+        saved = json.loads(files[0].read_text())
+        self.assertEqual(saved["name"], "Jane Doe")
+        self.assertEqual(saved["jurisdiction"], "England and Wales")
+        self.assertEqual(os.stat(files[0]).st_mode & 0o777, 0o600)
+        self.assertIsNone(self.bot.intake)
+
+    def test_intake_requires_explicit_consent(self):
+        for answer in ("/intake", "Jane Doe", "New York, USA", "housing",
+                       "My landlord changed the locks.", "jane@example.com"):
+            reply = self.bot.respond(answer)
+        refused = self.bot.respond("maybe")
+        self.assertIn("not saved", refused.text)
+        self.assertFalse(list(Path(self.tmp.name).glob("*.json")))
+        self.bot.respond("cancel")
         self.assertIsNone(self.bot.intake)
 
     def test_intake_cancel(self):
